@@ -1,14 +1,18 @@
 #!/usr/bin/env python3
+"""
+    Module with typing Python
+"""
+
 
 def add(a: float, b: float) -> float:
     """
-    Add two floating-point numbers.
+        Args:
+            a: The first parameter
+            b: The second parameter
 
-    Args:
-        a (float): The first number to be added.
-        b (float): The second number to be added.
+        Return:
+            Sum of two floats
 
-    Returns:
-        float: The sum of the two numbers.
     """
-    return a + b
+
+    return (a + b)

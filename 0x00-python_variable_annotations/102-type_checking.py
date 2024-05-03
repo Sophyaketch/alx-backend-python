@@ -1,19 +1,28 @@
-from typing import Tuple, List, Sequence
+#!/usr/bin/env python3
+"""
+    Type checking
+"""
+from typing import Tuple, List
 
-def zoom_array(lst: Sequence[int], factor: int = 2) -> List[int]:
+
+def zoom_array(lst: Tuple, factor: int = 2) -> List:
     """
-    Zooms in on the elements of a given sequence by duplicating each element
-    according to the specified factor.
+        Args:
+            lst: Tuple of numbers
+            factor: increase factor
 
-    Args:
-        lst (Sequence[int]): The input sequence of integers to be zoomed in.
-        factor (int): The factor by which to zoom in (default is 2).
-
-    Returns:
-        List[int]: The zoomed-in list of integers.
+        Return:
+            zoomed
     """
-    zoomed_in: List[int] = [
+    zoomed_in: List = [
         item for item in lst
-        for _ in range(factor)
+        for i in range(factor)
     ]
     return zoomed_in
+
+
+array = (12, 72, 91)
+
+zoom_2x = zoom_array(array)
+
+zoom_3x = zoom_array(array, 3)

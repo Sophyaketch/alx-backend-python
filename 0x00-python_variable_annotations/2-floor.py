@@ -1,13 +1,16 @@
 #!/usr/bin/env python3
+"""
+    Truncate float to integer
+"""
+
 
 def floor(n: float) -> int:
     """
-    Return the floor value of the input float number.
+        Args:
+            n: float number
 
-    Args:
-        n (float): The input float number.
-
-    Returns:
-        int: The floor value of the input number.
+        Return:
+            Float number truncated to floor
     """
-    return int(n // 1)
+
+    return int(n)

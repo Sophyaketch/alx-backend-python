@@ -1,15 +1,21 @@
-from typing import Union
+#!/usr/bin/env python3
+"""
+    Mixed Tuple
+"""
+from typing import Union, Tuple
 
-def to_kv(k: str, v: Union[int, float]) -> tuple[str, float]:
+
+def to_kv(k: str, v: Union[int, float]) -> Tuple[str, float]:
     """
-    Create a tuple with a key-value pair where the value is squared.
+        Args:
+            k: String
+            v: Union: Can be int or float
 
-    Args:
-        k (str): The key as a string.
-        v (Union[int, float]): The value, which can be an integer or a float.
-
-    Returns:
-        tuple[str, float]: A tuple containing the key `k` and the square of `v` as a float.
+        Return:
+            Tuple with string and int or float
     """
-    squared_value = float(v * v)  # Calculate the square of `v` and convert to float
-    return (k, squared_value)
+
+    cncat: Tuple(str, Union[int, float])
+    cncat = (k, v**2)
+
+    return cncat

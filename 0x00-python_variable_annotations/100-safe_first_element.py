@@ -1,14 +1,18 @@
-from typing import Sequence, Any, Union, Optional
+#!/usr/bin/env python3
+"""
+    Duck typing sequence Any
+"""
+from typing import Any, Sequence, Union
 
+
+# The types of the elements of the input are not know
 def safe_first_element(lst: Sequence[Any]) -> Union[Any, None]:
     """
-    Safely returns the first element of a sequence, or None if the sequence is empty.
+        Args:
+            lst: Any data type
 
-    Args:
-        lst (Sequence[Any]): Input sequence of elements of any type.
-
-    Returns:
-        Union[Any, None]: The first element of the sequence, or None if the sequence is empty.
+        Return:
+            None or first element
     """
     if lst:
         return lst[0]

@@ -1,15 +1,17 @@
 #!/usr/bin/env python3
+"""
+    Handle of string with annotations
+"""
+
 
 def concat(str1: str, str2: str) -> str:
     """
-    Concatenate two input strings.
+        Args:
+            str1: The first string parameter
+            str1: The second string parameter
 
-    Args:
-        str1 (str): The first string to be concatenated.
-        str2 (str): The second string to be concatenated.
-
-    Returns:
-        str: The concatenated string of str1 followed by str2.
+        Return:
+            Concatenated string
     """
-    string_concat = str1 + str2
-    return string_concat
+
+    return (str1 + str2)
